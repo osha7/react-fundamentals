@@ -48,11 +48,12 @@
   <script type="module">
     const rootElement = document.getElementById('root')
     const firstSpan = React.createElement('span', {children: 'Hello'})
-    const secondSpan = React.createElement('span', {}, 'World') // same as above
+    const secondSpan = React.createElement('span', {}, 'There World') // same as above
     //     const secondSpan = React.createElement('span', null, 'World') // same as above
     const element = React.createElement('div', { className: 'container', children: [firstSpan, ' ', secondSpan] })
     // const element = React.createElement('div', { className: 'container'}, firstSpan, secondSpan) // same as above
-
+    // const root = ReactDOM.createRoot(rootElement)
+    // root.render(element)
     ReactDOM.render(element, rootElement)
   </script>
 </body>
